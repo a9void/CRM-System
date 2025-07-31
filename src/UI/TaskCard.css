@@ -1,0 +1,65 @@
+.taskCard-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.taskСard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.taskСard.active {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-blue {
+  background-color: #5895fa;
+}
+.btn-blue:hover {
+  background-color: #4072c7;
+}
+
+.btn-red {
+  background-color: #fd645e;
+}
+.btn-red:hover {
+  background-color: rgb(212, 81, 76);
+}
