@@ -42,12 +42,6 @@ const TaskCard = ({ todo, refreshTask }: TaskCardProps) => {
     }
   };
 
-  /*   const updateTodo = async (idTodo: number, editVaue: string) => {
-    await todoAPI.ediTodo(idTodo, editVaue);
-    refreshTask();
-    setEdit(false);
-  }; */
-
   return (
     <div className={`taskCard ${todo.isDone ? 'active' : ''} `}>
       <div className="taskCard__item">
