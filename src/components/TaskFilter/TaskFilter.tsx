@@ -3,33 +3,33 @@ import './TaskFilter.scss';
 interface TaskFilterProps {
   filter: string;
   setFilter: (filter: string) => void;
-  countTask: {
-    allCount: number;
-    inWorkCount: number;
-    completedCount: number;
+  counts: {
+    all: number;
+    inWork: number;
+    completed: number;
   };
 }
 
-const TaskFilter = ({ filter, setFilter, countTask }: TaskFilterProps) => {
+const TaskFilter = ({ filter, setFilter, counts }: TaskFilterProps) => {
   return (
     <div className="taskFilter">
       <div
         className={`taskFilter__item ${filter === 'all' ? 'active' : ''}`}
         onClick={() => setFilter('all')}
       >
-        Все({countTask.allCount})
+        Все({counts.all})
       </div>
       <div
         className={`taskFilter__item ${filter === 'inWork' ? 'active' : ''}`}
         onClick={() => setFilter('inWork')}
       >
-        В работе({countTask.inWorkCount})
+        В работе({counts.inWork})
       </div>
       <div
         className={`taskFilter__item ${filter === 'completed' ? 'active' : ''}`}
         onClick={() => setFilter('completed')}
       >
-        Сделано({countTask.completedCount})
+        Сделано({counts.completed})
       </div>
     </div>
   );
