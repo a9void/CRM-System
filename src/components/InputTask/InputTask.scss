@@ -1,0 +1,29 @@
+.inputTask {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+
+  &__input {
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    padding: 0 15px;
+  }
+  &__btn {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  &__error {
+    position: absolute;
+    bottom: -22px;
+    left: 10px;
+    color: red;
+    font-size: 12px;
+  }
+}

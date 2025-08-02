@@ -1,0 +1,22 @@
+.taskFilter {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  & > .active {
+    color: #5895fa;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    &:hover {
+      color: #456fb3;
+    }
+  }
+  &__item {
+    cursor: pointer;
+    font-weight: bold;
+    color: #808080;
+    &:hover {
+      color: #333333;
+    }
+  }
+}
