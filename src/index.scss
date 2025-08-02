@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Verdana', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+body {
+  background-color: #f1f4f9;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.container {
+  padding-top: 100px;
+  width: 640px;
+  margin: 0 auto;
+}
