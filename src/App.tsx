@@ -35,7 +35,7 @@ function App() {
     } else if (filter === 'completed') {
       return todos.filter((todo) => todo.isDone);
     }
-    return todos;
+    return null;
   })();
 
   return (
@@ -47,7 +47,7 @@ function App() {
           setFilter={setFilter}
           countTask={countTask}
         />
-        <TaskList todos={filteredTodos} />
+        <TaskList todos={filteredTodos} refreshTask={refreshTask} />
       </div>
     </>
   );

@@ -15,8 +15,10 @@
   background-color: #ffffff;
   border-radius: 15px;
   &.active {
-    text-decoration: line-through;
-    color: #808080;
+    .taskCard__item span {
+      text-decoration: line-through;
+      color: #808080;
+    }
   }
   &__item {
     display: flex;
@@ -27,6 +29,12 @@
     height: 20px;
     margin-right: 10px;
     cursor: pointer;
+  }
+  &__input-error {
+    margin-left: 10px;
+    font-size: 12px;
+    color: red;
+    text-decoration: none;
   }
   &__btn-container {
     display: flex;
@@ -45,6 +53,9 @@
   width: 35px;
   height: 35px;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   &__icon {
     width: 20px;
@@ -60,6 +71,12 @@
     background-color: #fd645e;
     &:hover {
       background-color: rgb(212, 81, 76);
+    }
+  }
+  &__green {
+    background-color: #7df883;
+    &:hover {
+      background-color: #6cc470;
     }
   }
 }

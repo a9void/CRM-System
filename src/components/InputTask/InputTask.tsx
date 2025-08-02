@@ -8,10 +8,12 @@ const InputTask = ({ refreshTask }: { refreshTask: () => void }) => {
   const [error, setError] = useState('');
 
   const addTodo = async () => {
-    if (newTodo.trim().length < 2) {
-      setError('введите больше 2 символов');
+    if (newTodo.trim() === '') {
+      setError('Это поле не может быть пустым');
+    } else if (newTodo.trim().length < 2) {
+      setError('Минимальная длина текста 2 символа');
     } else if (newTodo.trim().length > 64) {
-      setError('используйте меньше 64 символов');
+      setError('Максимальная длина текста 64 символа');
     } else {
       const newTodoData: NewTodo = {
         isDone: false,
