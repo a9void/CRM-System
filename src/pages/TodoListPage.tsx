@@ -6,6 +6,10 @@ import TaskList from '../components/TaskList';
 import todoAPI from '../api/todoAPI';
 import type { Todo } from '../types/todos';
 
+
+
+import AuthInput from '../UI/Auth/AuthInput/AuthInput';
+
 function TodoListPage() {
   const [filter, setFilter] = useState('');
   const [todos, setTodos] = useState<{
@@ -22,6 +26,7 @@ function TodoListPage() {
     inWork: 0,
     completed: 0,
   });
+
   // Функция обновления
   const refreshTask = async () => {
     const allData = await todoAPI.getTodos('all');
@@ -57,6 +62,7 @@ function TodoListPage() {
   return (
     <>
       <div className="container">
+        <AuthInput />
         <InputTask refreshTask={refreshTask} />
         <TaskFilter filter={filter} setFilter={setFilter} counts={counts} />
         <TaskList todos={filteredTodos} refreshTask={refreshTask} />

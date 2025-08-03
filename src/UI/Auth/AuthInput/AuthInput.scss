@@ -1,0 +1,24 @@
+/* #7f265b */
+
+.AuthInput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  &__label {
+    font-size: 14px;
+    color: gray;
+  }
+  &__input {
+    background-color: #fff;
+    width: 420px;
+    height: 45px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid rgba(127, 38, 91, 0.2);
+    &:focus {
+      outline: none;
+      border: 2px solid #7f265b;
+    }
+  }
+}
